@@ -5,3 +5,5 @@ authors = ["Arian Saputra <rianariansaputra@gmail.com>"]
 edition = "2018"
 
 [dependencies]
+rand="*" 
+guessing_game="*"
