@@ -1,6 +1,17 @@
+//enum akan menjadi tipe data
+
+enum Kontroller{
+    Push,
+    Kill,
+    _Put
+}
+
+
+
 fn main() {
     println!("Hello, world!");
 
+    //secara default di rust variable adalah imuttable(tidak bisa di ubah)
     let mut nama = "arian";
 
     println!("Hello  {}", nama);
@@ -41,10 +52,32 @@ fn main() {
         a+=1;
     }
 
+ 
+
     for a in a..100{
         println!("for = {}", a)
     }
 
     let num = 1..10;
-    println!("the range is {}", num);
+     println!("Jumlah {:?}", num.len());
+
+    //double :: untuk akses variant
+    // : untuk akses tipe
+
+    let harga:f64 = 20.000;
+     println!("Jumlah {:?}", harga);
+
+
+    let kontrol =  Kontroller::Kill;
+    let _kontrol_2:Kontroller =  Kontroller::Push; 
+    //sudah menjadi aturan di rust, variabel yang tidak digunakan akan menampilkan waring, karena buang" ruang, oleh karena itu 
+    //di pasang tanda _ pada awal variabel agar tidak memunculkan warning,
+
+    match kontrol{ //mirip switch di bahasa lain
+        Kontroller::Kill => println!("bunuh dia"),
+        Kontroller::Push => println!("Dorong dia"),
+        Kontroller::_Put => println!("Letakkan dia") 
+    }
+
+
 }
