@@ -5,6 +5,7 @@
 // jika anda menambah depedencies in cargo.toml, maka update package dengan `cargo build`, dan akan di simpan di
 
 use std::io; //memakai module dengan kata kunci `use`
+//list  mudule build in https://doc.rust-lang.org/1.2.0/std/index.html
 
 // untuk bisa menggunakan library external kita harus mengimport dengan `extern crate namapaket;`
 
@@ -151,4 +152,6 @@ fn main() {
     }; //karena akan ngereturn makan kita tutup dengan ;
 
     println!("baca : {}", hasil)
+
+
 }
