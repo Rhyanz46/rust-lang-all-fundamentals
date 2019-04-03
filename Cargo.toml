@@ -1,0 +1,7 @@
+[package]
+name = "belajar"
+version = "0.1.0"
+authors = ["Arian Saputra <rianariansaputra@gmail.com>"]
+edition = "2018"
+
+[dependencies]
