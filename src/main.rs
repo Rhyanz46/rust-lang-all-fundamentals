@@ -119,7 +119,7 @@ fn main() {
      println!("Jumlah {:?}", num.len()); //ambil jumlah dengan len()
 
     //double :: untuk akses variant
-    // : untuk akses tipe
+    // : untuk memberi tipe data
 
     let harga:f64 = 20.000;
      println!("Jumlah {:?}", harga);
