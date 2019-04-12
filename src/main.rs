@@ -81,7 +81,7 @@ fn main() {
 
     let tup: (i32, i64) = (12, 23); // tuple
 
-    let (_a, _b) = tup; //ekstract tuple
+    let (_a, _b) = tup; //ekstract tuple ke variabel baru
 
     let tuple_1 = (123, "Arian"); //tipe data bebas
 
