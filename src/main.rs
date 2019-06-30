@@ -41,6 +41,21 @@ enum Kontroller{
 
 fn main() {
 
+    // convert
+
+    let a = "   ";
+    let a : i32= a.len().to_string().trim().parse().expect("give me a number"); // shadowwing && number to string to number again
+    println!("our a = {}",a);
+
+    let b : i32= "22".trim().parse().expect("give me a number"); // string to number
+    println!("our b = {}",b);
+
+    let g : String = 23213.to_string(); // number to string
+    println!("our g = {}",g)
+
+
+
+
     let secret_number = rand::thread_rng().gen_range(1, 101); //menggunakan paket rand
 
     println!("secret number : {}", secret_number);
@@ -151,7 +166,17 @@ fn main() {
         true => 1 //tidak harus ada pengecualian, karena boolean hanya true dan false
     }; //karena akan ngereturn makan kita tutup dengan ;
 
-    println!("baca : {}", hasil)
+    println!("baca : {}", hasil);
 
 
+    let mut data_array = [1,2,3,4];
+
+    data_array[0] = 3;
+
+    for a in 0..data_array.len(){
+        println!("ini index ke {} = {}", a+1, data_array[a]);
+    }
+
+    let array_static: [u32; 5] = [2,3,4,5,6]; //[tipe data / length] atau [value/jumlah] => value dari semua index
+    
 }
